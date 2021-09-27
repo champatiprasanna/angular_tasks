@@ -1,0 +1,32 @@
+p, #color, #num, #day{
+    color:darkred;
+    width:80%;
+    margin-left:85px;
+}
+
+h1{
+
+    color: darkcyan;
+    margin-left:85px;
+}
+
+#button{
+    margin-left:85px;
+    color:darkorange;
+    padding:10px 10px;
+    border-radius: 3%;
+}
+
+#image{
+    margin-left:85px; 
+}
+#tasks{
+    margin-left:85px; 
+}
+
+
+.addColor {
+    background-color:darkviolet;
+    
+
+}

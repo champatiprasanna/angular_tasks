@@ -1,0 +1,17 @@
+nav{
+    background-color:darkcyan;
+    
+}
+
+nav ul{
+    list-style-type:none;
+    
+}
+nav ul li{
+    display:inline-block;
+    text-decoration:none;
+    margin-right:80px;
+    text-align:center;
+    color:burlywood;
+    padding: 2% 5% 2% 5%;
+}

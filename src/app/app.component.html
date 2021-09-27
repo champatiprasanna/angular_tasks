@@ -1,0 +1,129 @@
+
+<app-header></app-header>
+<app-nav></app-nav>
+<app-body></app-body>
+<app-task1></app-task1>
+<app-task2></app-task2>
+<h1> Here is the Task-3 --------String Interpolation</h1>
+<p> Data Binding is the coommunication between businees logic file and template file<br>
+    {{name1}} <br>
+    {{name2}} <br>
+    {{name3}} <br>
+    {{name4}} <br>
+</p>
+<div>
+    
+    <h1> 10 + 5 + 6 * 8 = {{10 + 5 + 6 * 8}}</h1>
+
+</div>
+<h1> Here is the Task-3 ----------Property Binding</h1>
+<div id = "image">
+
+    <img [src] = 'site'/>
+
+</div>
+
+<button [disabled] = "!activate"  id = "button">Click</button>
+
+<h1 >
+    This is Task4----------------
+</h1>
+<p *ngIf = "renderpara; else elseBlock">
+    What are Directives?<br>
+    Directives are the classes that add additional behaviour to the elements in the angular application.<br>
+    1. Components<br>
+    2.Attribute<br>
+    3.Structural<br>
+    <br>
+    <br>
+    <br>
+    Explain briefly about structural directives and attribute directives<br>    
+    Using Structural directives the DOM layout by adding/removing the DOM elements<br>
+    *ngIf<br>
+    *ngFor<br>
+    *ngSwitch<br>
+    <br>
+    <br>
+    Using Attribute directives we can change the apperance or behaviour of angular application<br>
+    NgClass<br>
+    NgStyle<br>
+    NgModel<br>
+    <br>
+    <br>
+    <br>
+    Give 5 examples for each directive that you have learnt today.
+
+</p>
+
+
+<ng-template #elseBlock>
+    <p>
+        Else Block
+    </p>
+</ng-template>
+
+<label for = "tasks" id = "tasks">Tasks</label>
+<select name = "tasks" id = "tasks">
+
+    <option value ="Task-1" *ngIf = "task1; else elseBlock">Task-1</option>
+    <option value ="Task-2" *ngIf = "task2; else elseBlock">Task-2</option>
+    <option value ="Task-3" *ngIf = "task3; else elseBlock">Task-3</option>
+    <option value ="Task-4" *ngIf = "task4; else elseBlock">Task-4</option>
+
+</select>
+<p *ngIf = "renderpara; else elseBlock">10+20+30 = {{10+20+30}}</p>
+
+<p *ngIf = "renderpara; else elseBlock">The above are the examples of *ngIf structural directives</p>
+
+<p> Here are the examples of *ngSwitch </p>
+
+<div [ngSwitch] = "num" id = "num">
+    <div *ngSwitchCase = "10"> The value is 10</div>
+    <div *ngSwitchCase = "20"> The value is 20</div>
+    <div *ngSwitchCase = "30"> The value is 30</div>
+    <div *ngSwitchDefault> We could not find the value</div>
+
+</div>
+
+<div [ngSwitch] = "color" id = "color">
+    <div *ngSwitchCase = "'red'"> The color you selected is Red</div>
+    <div *ngSwitchCase = "'cyan'"> The color you selected is Cyan</div>
+    <div *ngSwitchCase = "'blue'"> The color you selected is Blue</div>
+    <div *ngSwitchCase = "'black'"> The color you selected is Black </div>
+
+    <div *ngSwitchDefault>No color is selected </div>
+</div>
+
+<div [ngSwitch] = "day" id = "day">
+    <div *ngSwitchCase = "'mon'"> Today is MON</div>
+    <div *ngSwitchCase = "'tue'"> Today  is TUE</div>
+    <div *ngSwitchCase = "'wed'"> Today  is WED</div>
+    <div *ngSwitchCase = "'thu'"> Today  is THU </div>
+
+    <div *ngSwitchDefault>No color is selected </div>
+</div>
+
+<p>Here are the examples of *ngFor</p>
+
+<ul *ngFor = "let color of colors">
+    <li id= "color">{{color}}</li>
+</ul>
+<br>
+
+<ul *ngFor = "let day of days">
+    <li id ="day">{{day}}</li>
+</ul>
+<br>
+<ul *ngFor = "let val of value">
+    <li id = "color">{{val}}</li>
+</ul>
+
+<p ngClass = "'addColor">
+    This is Attribute Direcetive
+</p>
+
+
+
+
+<app-footer></app-footer>
+
